@@ -1,0 +1,31 @@
+.page-wrapper {
+  // styles for the container of the form
+}
+
+.page-breadcrumb {
+  // styles for the header of the page
+}
+
+.form-group {
+  margin-bottom: 1rem; // margin between each form group
+
+  label {
+    font-weight: bold; // bold label
+  }
+
+  .form-control {
+    width: 100%; // full width input
+    border-radius: 0; // remove border radius
+    border: none; // remove border
+    border-bottom: 1px solid #ccc; // add bottom border
+  }
+
+  textarea.form-control {
+    resize: none; // prevent resizing
+  }
+}
+
+.btn-primary {
+  background-color: teal;
+  color: aqua;
+}

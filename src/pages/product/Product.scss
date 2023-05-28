@@ -1,0 +1,99 @@
+.wrapper {
+  padding: 50px;
+  display: flex;
+  .imgContainer {
+    flex: 1;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .info {
+    flex: 1;
+    padding: 0px 50px;
+    h1 {
+      font-weight: 200;
+    }
+    p {
+      margin: 20px 0px;
+    }
+    span {
+      font-weight: 100;
+      font-size: 40px;
+    }
+    .filterContainer {
+      width: 50%;
+      margin: 30px 0px;
+      display: flex;
+      justify-content: space-between;
+      .filter {
+        display: flex;
+        align-items: center;
+      }
+      span {
+        font-size: 20px;
+        font-weight: 200;
+      }
+
+      .filterColor {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #f8f4f4;
+        margin: 0px 5px;
+        cursor: pointer;
+      }
+    }
+    .addContainer {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .amountContainer {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        span {
+          width: 30px;
+          height: 30px;
+          border-radius: 10px;
+          border: 1px solid teal;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0px 5px;
+        }
+        button {
+          padding: 15px;
+          border: 2px solid teal;
+          background-color: white;
+          cursor: pointer;
+          font-weight: 500;
+          :hover {
+            background-color: #f8f4f4;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    padding: 10px;
+    flex-direction: column;
+    .imgContainer {
+      img {
+        height: 40vh;
+      }
+    }
+    .info {
+      padding: 10px;
+    }
+    .filterContainer {
+      width: 100%;
+    }
+    .addContainer {
+      width: 100%;
+    }
+  }
+}
