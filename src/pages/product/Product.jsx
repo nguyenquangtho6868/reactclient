@@ -50,7 +50,7 @@ function Product() {
         <div className="info">
           <h1>{product.title}</h1>
           <p>{product.desc}</p>
-          <span>$ 20</span>
+          <span>$ {product.price}</span>
           <div className="filterContainer">
             <div className="filter">
               <span>Color</span>
