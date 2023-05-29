@@ -15,8 +15,8 @@ function Product() {
   const id = location.pathname.split("/")[2];
   const [product, setProduct] = useState({});
   const [quantity, setQuantity] = useState(1);
-  const [color, setColor] = useState("");
-  const [size, setSize] = useState("");
+  const [color, setColor] = useState("red");
+  const [size, setSize] = useState("free");
   const dispatch = useDispatch();
   useEffect(() => {
     const getProduct = async () => {
